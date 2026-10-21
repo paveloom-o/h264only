@@ -25,6 +25,8 @@
 // @description  Block support for any video compression standard besides H.264
 // @version      0.1.0
 // @license      GPL-3.0-or-later
+// @downloadURL  https://codeberg.org/paveloom-o/h264only/raw/branch/main/h264only.user.js
+// @updateURL    https://codeberg.org/paveloom-o/h264only/raw/branch/main/h264only.user.js
 // @match        *://m.youtube.com/*
 // @match        *://music.youtube.com/*
 // @match        *://www.youtube.com/*
