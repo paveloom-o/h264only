@@ -52,9 +52,9 @@ function patch() {
     }
 
     // https://developer.mozilla.org/en-US/docs/Web/API/MediaCapabilities/decodingInfo
-    if (navigator.mediaCapabilities && navigator.mediaCapabilities.decodingInfo) {
-        const original = navigator.prototype.mediaCapabilities;
-        navigator.mediaCapabilities.decodingInfo = (configuration) => {
+    if (navigator.mediaCapabilities && navigator.mediaCapabilities.prototype.decodingInfo) {
+        const original = navigator.mediaCapabilities.prototype.decodingInfo;
+        navigator.mediaCapabilities.prototype.decodingInfo = (configuration) => {
             const contentType = configuration?.video?.contentType;
             if (isBlocked(contentType)) {
                 return Promise.resolve({
